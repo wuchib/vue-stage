@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="./vue.js"></script>
+    <script>
+        // 响应式的数据变化，数据变化了我可以监控到数据的变化
+        // 数据的取值和更改我们要监控到
+        const vm = new Vue({
+            el:"#app",
+            data(){
+                return {
+                    name:'wcb',
+                    age:123,
+                    a:{x:1,b:'123'},
+                    hobby:['eat','drink']
+                }
+            }
+        })
+        console.log(vm.name);
+
+        // 修改数组 很少用引用来操作数组   内部做劫持会浪费性能
+        // 用户一般修改数组都是通过方法来修改 
+    </script>
+</body>
+</html>
