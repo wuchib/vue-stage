@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "rollup": "^2.61.1"
+    "rollup": "^3.29.5"
   },
   "devDependencies": {
     "@babel/core": "^7.22.9",
